@@ -1,0 +1,14 @@
+<ul id="entries">
+	<% entries.each(function(entry) { %>
+	  <li class='entry short' data-id="<%= entry.id %>">
+		  <%= entry.escape("title") %>
+			<div class='hidden extra-info'>
+				<a href="<%= entry.escape("link") %>">Link</a>
+				<%= entry.escape("title") %>
+				<%= entry.escape("pubDate") %>
+				<%= entry.escape("description") %>
+				<%= entry.escape("comments") %>
+			</div>
+	  </li>
+	<% }); %>
+</ul>

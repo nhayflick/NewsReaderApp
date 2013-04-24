@@ -19,4 +19,8 @@ class FeedsController < ApplicationController
     end
   end
 
+  def show
+    render :json => Feed.find(params[:id])
+  end
+
 end

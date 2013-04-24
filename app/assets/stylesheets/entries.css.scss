@@ -1,0 +1,43 @@
+// Place all the styles related to the entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.hidden {
+	display: none;
+}
+
+.topbar {
+  background-color: #7f8c8d
+}
+
+.extra-info {
+	//background-color: #FF0000;
+	width: 80%;
+}
+
+.short {
+//	width: 50%;
+}
+
+.content {
+	display: inline-block;
+	width: 80%;
+	float: left;
+}
+
+.sidebar {
+	display: inline-block;
+	width: 20%;
+	float: left;
+}
+
+.content-div {
+	display: inline-block;
+	width: 80%;
+}
+
+.sidebar-div {
+	display: inline-block;
+	width: 20%;
+}
