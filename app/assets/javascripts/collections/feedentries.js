@@ -1,7 +1,7 @@
 NR.Collections.FeedEntries = Backbone.Collection.extend({
 	model: NR.Models.Entry,
 
-	initialize: function(models, options) { // Do we need [] as first arg?
+	initialize: function(models, options) {
 		this.feed = options.feed;
 	},
 

@@ -14,11 +14,8 @@ NR.Views.FeedShowView = Backbone.View.extend({
 	},
 	render: function() {
 		var that = this;
-		console.log("model:", this.model);
-
 		that.model.get('entries').fetch({
 			success: function(){
-				console.log('entries', that.model.get('entries'));
 				var renderedContent = JST["feeds/show"]({
 					feed: that.model,
 					entries: that.model.get('entries')

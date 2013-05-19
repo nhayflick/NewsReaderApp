@@ -1,8 +1,11 @@
 <div>
+<br>
+<br>
+<br>
+<br>
 <ul>
 	<% feeds.each(function(feed) { %>
-		<li>
-			<!-- Do we need to do feed.get("id")? -->
+		<li class="feed-list">
 			<a href='#/feeds/<%= feed.escape("id") %>'>
 				<%= feed.escape("title") %>
 			</a>

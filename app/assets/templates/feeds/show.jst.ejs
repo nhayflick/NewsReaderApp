@@ -1,13 +1,18 @@
+<br>
+<br>
+<br>
+<br>
+
+<h4> <%= feed.get("title") %> </h4>
 <ul id="entries">
 	<% entries.each(function(entry) { %>
 	  <li class='entry short' data-id="<%= entry.id %>">
-		  <%= entry.escape("title") %>
+		  <%= entry.get("title") %>
 			<div class='hidden extra-info'>
 				<a href="<%= entry.escape("link") %>">Link</a>
-				<%= entry.escape("title") %>
-				<%= entry.escape("pubDate") %>
-				<%= entry.escape("description") %>
-				<%= entry.escape("comments") %>
+				<%= entry.get("title") %>
+				<%= entry.get("pubDate") %>
+				<%= entry.get("comments") %>
 			</div>
 	  </li>
 	<% }); %>

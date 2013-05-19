@@ -25,6 +25,6 @@ window.NR = {
 		});
 
 		$sidebar.html(feedsListView.render().$el);
-		$sidebar.append("<button style='btn.btn-primary'>Add Feed</button>");
+		$sidebar.append("<a href='/#/feeds/new'><button class='btn btn-large btn-primary'>Add Feed</button></a>");
 	}
 };

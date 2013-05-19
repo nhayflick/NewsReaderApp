@@ -17,7 +17,12 @@ NR.Routers.FeedsRouter = Backbone.Router.extend({
 	},
 
 	new: function () {
-
+		var that = this;
+		var feed = new NR.Models.Feed();
+		var feedNewView = new NR.Views.FeedNewView({
+			model: feed
+		})
+		that.$rootEl.html(feedNewView.render().$el);
 	},
 
 	show: function (id) {
